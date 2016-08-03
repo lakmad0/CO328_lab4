@@ -14,7 +14,7 @@ public class StudentApplication extends Application
     private final Set<Object> singletons = new HashSet();
     private final Set<Class<?>> empty = new HashSet();
  
-    public StudentApplication() {
+    public StudentApplication() throws Exception{
         // ADD YOUR RESTFUL RESOURCES HERE
         this.singletons.add(new StudentService());
     }
